@@ -3,6 +3,16 @@
 
 We are trying to get almost every state, if you have a different state, open a issue with the title of your state and provide AS MUCH DETAIL AS POSSIBLE about how you take your state tests.
 
+- [State Testing Unrestricted](#state-testing-unrestricted)
+  * [North Carolina](#north-carolina)
+    + [The easy method](#the-easy-method)
+    + [The hard method](#the-hard-method)
+  * [Wisconsin](#wisconsin)
+    + [Forward Exam](#forward-exam)
+    + [STAR test](#star-test)
+
+<small><i><a href='http://github.com/3kh0/readme-toc/'>Table of contents generated with readme-toc</a></i></small>
+
 ## North Carolina
 ~~This is the first one bc I live in that state lol~~
 
@@ -35,7 +45,7 @@ function onMessage(e) {
 ```
 *Source: [data.ncsu.edu/nctest/common.js](https://data.ncsu.edu/nctest/common.js) Archived: [pastebin.com/gVAUnkwW](https://pastebin.com/gVAUnkwW)*
 
-### The easy method.
+### The easy method
 
 This is a much easy way without having to spoof useragents, this also depends if you can install the app on your device, this can work on Windows and Linux, but sometimes it does break, relaunching does seem to fix the issue of getting blocked.
 
@@ -61,14 +71,18 @@ In this app, you can use keybinds suck as `alt`+`tab` to change windows while ta
 
 ![Screenshot 2023-05-09 09 24 52](https://github.com/3kh0/state-test/assets/58097612/6709e882-dba4-4924-ac34-8f3e57fd2737)
 
-### The hard method.
+### The hard method
 
 Coming soon, still researching on how this works and the best way to do it.
 
 Further Reading:
 - https://defcon.social/@3kh0/110293819888798643
 
-## Wisconsin (Forward Exam)
+## Wisconsin
+
+Here is how to bypass the exams for wisconsin.
+
+### Forward Exam
 
 Forward Exams are provided through DRC Insight, which can be accessed [here](https://wbte.drcedirect.com/WI/portals/wi). However, it hides the test sign-in option if the client is not in the designated kiosk. However, this is done on the client-side, and as any developer knows, you should never trust the client side. Looking through the code, the following line immediately jumps out:
 
@@ -91,6 +105,6 @@ javascript:(function()%7Bvar a %3D document.getElementsByClassName("hide-link")%
 
 Just run the script and the hidden options will show up. Enjoy!
 
-## Wisconsin (STAR test)
+### STAR test
 
 STAR tests are handled through Renaissance Learning, which doesn't have any browser restrictions. Access it [here](https://global-zone08.renaissance-go.com/studentportal/) and sign in with your normal credentials. If a monitor password is needed to start the test, enter `admin` (very secure, I know).
