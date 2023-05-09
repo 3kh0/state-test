@@ -67,3 +67,30 @@ Coming soon, still researching on how this works and the best way to do it.
 
 Further Reading:
 - https://defcon.social/@3kh0/110293819888798643
+
+## Wisconsin (Forward Exam)
+
+Forward Exams are provided through DRC Insight, which can be accessed [here](https://wbte.drcedirect.com/WI/portals/wi). However, it hides the test sign-in option if the client is not in the designated kiosk. However, this is done on the client-side, and as any developer knows, you should never trust the client side. Looking through the code, the following line immediately jumps out:
+
+```html
+<a href="/WI/?adminId=553270&amp;index=1#portal/wi/553270/exam" id="testLink1" index="1" class="hide-link">Test Sign In</a>
+```
+
+Right there, see it? `class="hide-link"`. I threw together a little script to remove the class, and it ended up looking like this:
+
+```js
+var a = document.getElementsByClassName("hide-link"); for(b in a){if(b<=a.length)
+document.getElementsByClassName("hide-link")[b].className=document.getElementsByClassName("hide-link")[b].className.replace("hide-link","")}
+```
+
+In bookmarklet form:
+
+```js
+javascript:(function()%7Bvar a %3D document.getElementsByClassName("hide-link")%3B for(b in a)%7Bif(b<%3Da.length)%0Adocument.getElementsByClassName("hide-link")%5Bb%5D.className%3Ddocument.getElementsByClassName("hide-link")%5Bb%5D.className.replace("hide-link"%2C"")%7D%7D)()%3B
+```
+
+Just run the script and the hidden options will show up. Enjoy!
+
+## Wisconsin (STAR test)
+
+STAR tests are handled through Renaissance Learning, which doesn't have any browser restrictions. Access it [here](https://global-zone08.renaissance-go.com/studentportal/) and sign in with your normal credentials. If a monitor password is needed to start the test, enter `admin` (very secure, I know).
