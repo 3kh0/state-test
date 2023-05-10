@@ -10,6 +10,8 @@ We are trying to get almost every state, if you have a different state, open a i
   * [Wisconsin](#wisconsin)
     + [Forward Exam](#forward-exam)
     + [STAR test](#star-test)
+  * [California](#california)
+    + [CAASPP](#caaspp)
 
 <small><i><a href='http://github.com/3kh0/readme-toc/'>Table of contents generated with readme-toc</a></i></small>
 
@@ -108,3 +110,9 @@ Just run the script and the hidden options will show up. Enjoy!
 ### STAR test
 
 STAR tests are handled through Renaissance Learning, which doesn't have any browser restrictions. Access it [here](https://global-zone08.renaissance-go.com/studentportal/) and sign in with your normal credentials. If a monitor password is needed to start the test, enter `admin` (very secure, I know).
+
+## California
+All state assesments done in Californian public schools are done with California Assessment of Student Performance and Progress (CAASPP) secure test browser. This "secure" browser acts like every other test browser, limiting the use of the system.
+
+### CAASPP
+Luckily, you literally don't even need to use the secure browser! The login page is available [here](https://ca.cambiumtds.com/student), and from my understanding, you are able to access everything you normally would on the test browser, without restrictions.
