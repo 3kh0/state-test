@@ -115,4 +115,4 @@ STAR tests are handled through Renaissance Learning, which doesn't have any brow
 All state assesments done in Californian public schools are done with California Assessment of Student Performance and Progress (CAASPP) secure test browser. This "secure" browser acts like every other test browser, limiting the use of the system.
 
 ### CAASPP
-Luckily, you literally don't even need to use the secure browser! The login page is available at https://ca.cambiumtds.com/student, and from my understanding, you are able to access everything you normally would on the test browser, without restrictions.
+Luckily, you literally don't even need to use the secure browser! The login page is available [here](https://ca.cambiumtds.com/student), and from my understanding, you are able to access everything you normally would on the test browser, without restrictions.
