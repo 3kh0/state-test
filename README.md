@@ -12,6 +12,8 @@ We are trying to get almost every state, if you have a different state, open a i
     + [STAR test](#star-test)
   * [California](#california)
     + [CAASPP](#caaspp)
+  * [Georgia](#georgia)
+    + [Forward Exam](#georgia-forward-exam)
 
 <small><i><a href='http://github.com/3kh0/readme-toc/'>Table of contents generated with readme-toc</a></i></small>
 
@@ -116,3 +118,28 @@ All state assesments done in Californian public schools are done with California
 
 ### CAASPP
 Luckily, you literally don't even need to use the secure browser! The login page is available [here](https://ca.cambiumtds.com/student), and from my understanding, you are able to access everything you normally would on the test browser, without restrictions.
+
+## Georgia
+Bypassing in Georgia.
+
+### Georgia Forward Exam
+
+Forward Exams are provided through DRC Insight, which can be accessed [here](https://wbte.drcedirect.com/GA/portals/ga). However, it hides the test sign-in option if the client is not in the designated kiosk. However, this is done on the client-side, and as any developer knows, you should never trust the client side. Looking through the code, the following line immediately jumps out:
+
+```html
+<a href="/GA/?adminId=553270&amp;index=1#portal/ga/553270/exam" id="testLink1" index="1" class="hide-link">Test Sign In</a>
+```
+
+Right there, see it? `class="hide-link"`. I threw together a little script to remove the class (using jquery), and it ended up looking like this:
+
+```js
+Array.from($('.hide-link')).forEach(t => $(t).removeClass('hide-link'));
+```
+
+In bookmarklet form:
+
+```js
+javascript:(function()%7BArray.from(%24('.hide-link')).forEach(t%20%3D%3E%20%24(t).removeClass('hide-link'))%3B%7D)()%3B
+```
+
+Just run the script and the hidden options will show up. Enjoy!
