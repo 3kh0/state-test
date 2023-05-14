@@ -77,7 +77,31 @@ In this app, you can use keybinds suck as `alt`+`tab` to change windows while ta
 
 ### The hard method
 
-Coming soon, still researching on how this works and the best way to do it.
+This is a little more tricky. It ininvoles getting your current useragent and spoofing it with a extension.
+
+1. Download a extension that can spoof your useragent.
+
+Chrome: [User-Agent Switcher for Chrome](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg)
+
+Firefox: [User-Agent Switcher and Manager](https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/)
+
+More ways to change: [How to Change User Agents in Chrome, Edge, Safari & Firefox](https://www.searchenginejournal.com/change-user-agent/368448/)
+
+2. Get your current useragent, you can just use google to look it up
+
+![image](https://github.com/3kh0/state-test/assets/58097612/49b803d1-ed7b-48d0-829f-b93a4ea7ee8a)
+
+3. Add `"NCTest/1.0 ChromeApp` to the start of it.
+
+So if your useragent is
+```
+YourMom/5.0 (X11; AmongOS x86_64; rv:109.0) Gecko/20100101 Firefox/114.0
+```
+you would change it to
+```
+NCTest/1.0 ChromeApp YourMom/5.0 (X11; AmongOS x86_64; rv:109.0) Gecko/20100101 Firefox/114.0
+```
+4. Access the login page for the test at [data.ncsu.edu/nctest/Destination.html](https://data.ncsu.edu/nctest/Destination.html)
 
 Further Reading:
 - https://defcon.social/@3kh0/110293819888798643
