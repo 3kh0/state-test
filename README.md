@@ -95,7 +95,7 @@ More ways to change: [How to Change User Agents in Chrome, Edge, Safari & Firefo
 
 So if your useragent is
 ```
-YourMom/5.0 (X11; AmongOS x86_64; rv:109.0) Gecko/20100101 Firefox/114.0
+YeetOS/5.0 (X11; AmongOS x86_64; rv:109.0) Gecko/20100101 Firefox/114.0
 ```
 you would change it to
 ```
