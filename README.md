@@ -13,9 +13,12 @@ We are trying to get almost every state, if you have a different state, open a i
   * [California](#california)
     + [CAASPP](#caaspp)
   * [Georgia](#georgia)
-    + [Forward Exam](#georgia-forward-exam)
+    + [Georgia Forward Exam](#georgia-forward-exam)
+  * [Minnesota](#minnesota)
+    + [MCA](#mca)
 
 <small><i><a href='http://github.com/3kh0/readme-toc/'>Table of contents generated with readme-toc</a></i></small>
+
 
 ## North Carolina
 ~~This is the first one bc I live in that state lol~~
@@ -167,3 +170,9 @@ javascript:(function()%7BArray.from(%24('.hide-link')).forEach(t%20%3D%3E%20%24(
 ```
 
 Just run the script and the hidden options will show up. Enjoy!
+
+## Minnesota
+Just like California, you can easily access everything with no restrictions.
+
+### MCA
+There are no checks, unlike most other test programs. You can just go to TestNav [here](https://home.testnav.com/) and then select Minnesota. As far as I know, there are no restrictions when using the website whatsoever.
